@@ -70,6 +70,7 @@ export default buildConfig({
   ],
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
+    declare: false,
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   // db: postgresAdapter({
